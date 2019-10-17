@@ -3,6 +3,7 @@
 const express = require('express');
 const router  = express.Router();
 const Leads = require(`../models/leads`);
+const nodemailer = require('nodemailer');
 
 
 
@@ -27,7 +28,55 @@ router.post('/leads', (req, res, next) => {
   })
 
   newLeads.save()
-    .then(res.render('/', { message: "E-mail cadastrado" }))
+    .then(() => {
+      let transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+          user: process.env.EMAIL,
+          pass: process.env.PSWD 
+        }
+      });
+
+      let textMessage = `
+      Your interest has been noted.
+      We will keep you posted of new developments.
+
+      If you want to contribute towards a better product, please take the survey below.
+
+      http̣://www.google.com
+
+      Thank you,
+      Grupo 6
+      `
+
+      let htmlMessage = `
+        <div style="width: 80%; margin: 80px auto">
+          <h1>Super Foods</h1>
+          <br>
+          <p>Your interest has been noted.</p>
+          <p>We will keep you posted of new developments.</p>
+          <br>
+          <p>If you want to contribute towards a better product, please take the survey below.</p>
+          <br>
+          <a href="http̣://www.google.com" style="border: 1px solid black; text-decoration: none; color: white; background-color: black; padding: 10px; border-radius: 5px;">TAKE SURVEY</a>
+          <br>
+          <br>
+          <h4>Thank you,</h4>
+          <h2>Grupo 6</h2>
+        </div>
+      `
+
+      transporter
+        .sendMail({
+          from: `"My Awesome Project 👻" <${process.env.EMAIL}>`,
+          to: email, 
+          subject: "Subscription.", 
+          text: textMessage,
+          html: htmlMessage
+        })
+        .then(() => res.render('/', { message: "E-mail cadastrado" }))
+        .catch((err) => console.log(err))
+    })
     .catch(res.render('/', { message: "Não foi possível realizar a operação, e-mail já cadastrado" }))
 })
 
@@ -42,10 +91,6 @@ router.get('/dashboard', (req, res, next) => {
     .catch(err => console.log(err)
     )
 })
-
-
-  
-  
 
 
 module.exports = router;
