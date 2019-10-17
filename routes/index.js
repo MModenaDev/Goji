@@ -2,7 +2,7 @@
 // Packages and Models require 
 const express = require('express');
 const router  = express.Router();
-const Leads = require(`../models/Leads`);
+const Leads = require(`../models/leads`);
 
 
 
@@ -27,9 +27,22 @@ router.post('/leads', (req, res, next) => {
   })
 
   newLeads.save()
-    .then(res.redirect('/', { message: "E-mail cadastrado" }))
-    .catch(err=>console.log(err))
+    .then(res.render('/', { message: "E-mail cadastrado" }))
+    .catch(res.render('/', { message: "Não foi possível realizar a operação, e-mail já cadastrado" }))
 })
+
+// =====================================================================================================================================
+// Profile
+
+router.get('/dashboard', (req, res, next) => {
+  Leads.find()
+    .then(leads => {
+      res.render('dashboard', {leads})
+    })
+    .catch(err => console.log(err)
+    )
+})
+
 
   
   

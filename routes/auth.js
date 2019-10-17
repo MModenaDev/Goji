@@ -4,6 +4,7 @@ const passport = require('passport');
 
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
+const Admin = require('../models/admin')
 
 // ======================================================================================================================
 // LOGIN
@@ -40,7 +41,7 @@ router.post("/signup", (req, res, next) => {
   const salt = bcrypt.genSaltSync(bcryptSalt);
   const hashPass = bcrypt.hashSync(password, salt);
 
-  const newUser = new User({
+  const newUser = new Admin({
     username,
     password: hashPass,
   });
