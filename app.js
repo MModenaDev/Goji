@@ -35,7 +35,7 @@ const app = express();
 
 app.use(session({
   secret: process.env.SECRET,
-  resave: false,
+  resave: true,
   saveUninitialized: true,
   store: new MongoStore({
     mongooseConnection: mongoose.connection,
@@ -54,9 +54,8 @@ passport.deserializeUser((id, cb) => {
   });
 });
 
-passport.use("local-login", new LocalStrategy((username, password, next) => {
-  console.log(username, password);
-  Admin.findOne({ username }, (err, user) => {
+passport.use(new LocalStrategy((username, password, next) => {
+  Admin.findOne({ username: username }, (err, user) => {
     if (err) {
       return next(err);
     }
