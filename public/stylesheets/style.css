@@ -16,59 +16,202 @@ body {
   height: 750px;
 }
 
-.pd-head{
-  padding: 3rem 7rem;
+@media (max-width: 800px){
+.section__filo{
+  padding: 50px 15%;
 }
 
-.jc-fe {
-  justify-content: flex-end;
+.section__title{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.header-box {
-  background-color: rgb(164, 168, 55);
-  text-align: end;
+.div_filo_total{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon_filo{
+  width: 75px;
+  height: 75px;
+  margin: 20px 0;
+}
+
+.div_filo_info{
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text_filo{
+  font-size: 15px;
+}
+
+.div_partners{
+  display: flex;
+  flex-wrap: wrap ;
+  align-items: center;
+}
+
+.section__partners {
+  background-color: #F3E0BE;
+  padding: 50px 5%;
+}
+
+.img_partners{
+  width: 100%;
+  height: 350px;
+  width: 464px;
+}
+
+.div_info_partners {
+  width: 100%;
+  text-align: center;
+  margin: auto 0px;
+}
+
+.text_partners {
+  font-size: 18px;
+}
+
+.section__footer{
+  background-color: #A5A837;
+  padding: 30px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info_footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text_footer {
+  font-size: 18px;
   color: white;
-  padding: 3rem;
-  margin: auto 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+
 }
 
-.pd-filo {
-  padding: 3rem 12rem;
+.input_footer {
+  width: 100%;
+  margin: 20px 0;
 }
 
-.pd-bene {
-  background-color: blue;
-  padding: 3rem 12rem;
-  height: 100vh;
-  position: relative;
+.list_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 18px;
+  margin-top: 40px;
 }
 
-.img-info-width{
-  width: 8rem;
-}
-
-.filo-info-width {
-  width: 10rem;
-}
-
-.center-title {
+.item_list_footer {
+  width: 50%;
   text-align: center;
 }
 
-.img-bene {
-  height: 40rem;
-  width: 40rem;
-  background-color: yellow;
-  border: 1px solid yellow;
-  border-radius: 40rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
 }
 
-.div-teste {
-  background-color: rgb(164, 168, 55);
-  width: 10rem;
-  height: ;;: 10rem;
+@media (min-width: 800px){
+.section__filo{
+  padding: 50px 20%;
+}
+
+.section__title{
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.color__brown {
+  color:#543e23;
+}
+
+.div_filo_total{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_filo{
+  width: 75px;
+  height: 75px;
+  margin: 20px 0;
+}
+
+.div_filo_info{
+  width: 15%;
+  padding: 5px;
+  text-align: center;
+}
+
+.text_filo{
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.div_partners{
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+.section__partners {
+  background-color: #F3E0BE;
+  padding: 50px 20%;
+}
+
+.img_partners{
+  width: 50%;
+}
+
+.div_info_partners {
+  width: 50%;
+  text-align: end;
+  margin: auto 0px;
+}
+
+.text_partners {
+  font-size: 18px;
+}
+
+.section__footer{
+  background-color: #A5A837;
+  padding: 30px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text_footer {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 70%;
+
+}
+
+.input_footer {
+  width: 70%;
+}
+
+.list_footer {
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
 }
