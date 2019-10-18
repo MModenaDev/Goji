@@ -31,9 +31,6 @@ router.get('/', (req, res, next) => {
 
 // =====================================================================================================================================
 // Leads
-router.get('/leads', (req, res, next) => {
-  res.render('testeLeads')
-})
 
 router.post('/leads', (req, res, next) => {
   const { email } = req.body;
@@ -48,13 +45,17 @@ router.post('/leads', (req, res, next) => {
         service: 'Gmail',
         auth: {
           user: process.env.EMAIL,
-          pass: process.env.PSWD 
+          pass: process.env.PSWD
         }
       });
 
       let textMessage = `
-      Your interest has been noted.
-      We will keep you posted of new developments.
+      GOJI
+
+      You have recieved 15% off.
+
+      Your interest has been noted,
+      we will keep you posted of new developments.
 
       If you want to contribute towards a better product, please take the survey below.
 
@@ -66,10 +67,12 @@ router.post('/leads', (req, res, next) => {
 
       let htmlMessage = `
         <div style="width: 80%; margin: 80px auto">
-          <h1>Super Foods</h1>
+          <h1>GOJI</h1>
           <br>
-          <p>Your interest has been noted.</p>
-          <p>We will keep you posted of new developments.</p>
+          <p>You have recieved 15% off.</p>
+          <br>
+          <p>Your interest has been noted,</p>
+          <p>we will keep you posted of new developments.</p>
           <br>
           <p>If you want to contribute towards a better product, please take the survey below.</p>
           <br>
@@ -83,16 +86,17 @@ router.post('/leads', (req, res, next) => {
 
       transporter
         .sendMail({
-          from: `"My Awesome Project 👻" <${process.env.EMAIL}>`,
-          to: email, 
-          subject: "Subscription.", 
+          from: `GOJI <goji.genki.contact@gmail.com>`,
+          // to: email, 
+          to: "marco100tno@gmail.com",
+          subject: "Thank You!", 
           text: textMessage,
           html: htmlMessage
         })
-        .then(() => res.render('/', { message: "E-mail cadastrado" }))
+        .then(() => res.rendirect('/'))
         .catch((err) => console.log(err))
     })
-    .catch(res.render('/', { message: "Não foi possível realizar a operação, e-mail já cadastrado" }))
+    .catch(res.render('landingPage', { message: "Não foi possível realizar a operação, e-mail já cadastrado" }))
 })
 
 // =====================================================================================================================================
