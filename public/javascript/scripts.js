@@ -62,12 +62,9 @@ var mySwiper = new Swiper ('.prices-container-desk', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 })
 
-var mySwiper = new Swiper ('.prices-container-mobile', {
+var mySwiper2 = new Swiper ('.prices-container-mobile', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -80,18 +77,11 @@ var mySwiper = new Swiper ('.prices-container-mobile', {
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 })
 
-var mySwiper2 = new Swiper ('.howWorks-container', {
+var mySwiper3 = new Swiper ('.howWorks-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -105,7 +95,21 @@ var mySwiper2 = new Swiper ('.howWorks-container', {
   // Navigation arrows
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 })
+
+var mySwiper4 = new Swiper ('.benefits_mobile-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+
+  // If we need pagination
+  pagination: {
+    el: '.benefits-mob-swiper-pagination',
+  },
+
+  // Navigation arrows
+
+  // And if we need scrollbar
+})
+
