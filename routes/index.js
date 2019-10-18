@@ -5,7 +5,7 @@ const router  = express.Router();
 const axios = require('axios')
 const Leads = require(`../models/leads`);
 const Store = require(`../models/stores`);
-const nodemailer = require('nodemail');
+const nodemailer = require('nodemailer');
 
 // =====================================================================================================================================
 // Landing Page
