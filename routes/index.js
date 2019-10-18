@@ -96,7 +96,7 @@ router.post('/leads', (req, res, next) => {
 })
 
 // =====================================================================================================================================
-// Profile
+// Dashboard
 
 router.get('/dashboard/leads', checkLogedIn, (req, res, next) => {
   Leads.find()
