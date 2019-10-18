@@ -76,7 +76,7 @@ var mySwiper = new Swiper ('.prices-container-mobile', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-food-mob',
   },
 
   // Navigation arrows
