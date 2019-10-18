@@ -87,13 +87,12 @@ router.post('/leads', (req, res, next) => {
       transporter
         .sendMail({
           from: `GOJI <goji.genki.contact@gmail.com>`,
-          // to: email, 
-          to: "marco100tno@gmail.com",
           subject: "Thank You!", 
+          to: email,
           text: textMessage,
           html: htmlMessage
         })
-        .then(() => res.rendirect('/'))
+        .then(() => res.redirect('/'))
         .catch((err) => console.log(err))
     })
     .catch(res.render('landingPage', { message: "Não foi possível realizar a operação, e-mail já cadastrado" }))
@@ -137,10 +136,13 @@ router.get('/adress', (req, res, next) => {
       })
       
       newStore.save()
-        .then(res.redirect('/adress'))
+        .then(res.redirect('/'))
         .catch(err => console.log(err))
     })
-    .catch(err => console.log(err))
+    .catch((err) => {
+      console.log(err);
+      res.redirect('/');
+    })
 })
 
 // =====================================================================================================================================
