@@ -43,7 +43,7 @@ window.onload = () => {
   getStores()
 };
 
-var mySwiper = new Swiper ('.prices-container', {
+var mySwiper = new Swiper ('.prices-container-desk', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -67,4 +67,45 @@ var mySwiper = new Swiper ('.prices-container', {
   },
 })
 
+var mySwiper = new Swiper ('.prices-container-mobile', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+
+var mySwiper2 = new Swiper ('.howWorks-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+
+  // If we need pagination
+  pagination: {
+    el: '.howWorks-swiper-pagination',
+  },
+
+  // Navigation arrows
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
