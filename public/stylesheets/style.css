@@ -163,6 +163,15 @@ body {
   text-align: center;
 }
 
+.logo{
+  margin-left: 5vw;
+  margin-top: 5vh;
+  max-width: 450px;
+  max-height: 200px;
+  width: 40vw;
+  height: 30vh;
+}
+
 .header {
   height: 100vh;
   background-image: url("../images/header-bg.png");
@@ -366,7 +375,7 @@ body {
 
 .text_partners {
   font-size: 18px;
-  width: 60%;
+  width: 65%;
   text-align: right;
 }
 
@@ -403,12 +412,19 @@ body {
   justify-content: space-between;
 }
 
-  
+.logo{
+  margin-left: 50px;
+  margin-top: 50px;
+  max-width: 450px;
+  max-height: 200px;
+  width: 40vw;
+  height: 30vh;
+}
+
 .header {
   height: 100vh;
   background-image: url("../images/header-bg.png");
   background-size: cover;
-  text-align: right;
   position: relative;
 }
 
@@ -417,6 +433,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
+  text-align: right;
   right: 8.4vw;
   top:  50%;
   transform: translatey(-50%);
