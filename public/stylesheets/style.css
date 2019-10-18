@@ -45,6 +45,20 @@ body {
   width: 100px;
 }
 
+
+.button {
+  background-color: #a36527;
+  border-color: #a36527;
+  color: white;
+}
+
+.button:hover  {
+  background-color: #C68544;
+  border-color: #C68544;
+  color: white;
+}
+
+
 @media (max-width: 800px){
 .section__filo{
   padding: 50px 15%;
@@ -93,8 +107,7 @@ body {
 
 .img_partners{
   width: 100%;
-  height: 350px;
-  width: 464px;
+  margin-bottom: 20px;
 }
 
 .div_info_partners {
@@ -148,6 +161,103 @@ body {
 .item_list_footer {
   width: 50%;
   text-align: center;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  height: 8.4vw;
+  min-height: 329px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header__text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.header__text--big {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.header__input--space {
+  margin-bottom: 10px;
+}
+
+.header__form--center {
+  max-width: 360px;
+  text-align: center;
+}
+
+.fornecedores{
+  height: 650px;
+  background-image: url("../images/fornecedores-bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.fornecedores__box{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: flex-end;
+  bottom: 0px;
+  width: 100vw;
+  height: 8.4vw;
+  min-height: 329px;
+  padding: 35px 52px;
+}
+
+.fornecedores__text {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+
+.fornecedores__text--big {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.fornecedores__button {
+  width: 150px;
 }
 
 }
@@ -243,214 +353,100 @@ body {
   justify-content: space-between;
 }
 
+  
+.header {
+  height: 100vh;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  text-align: right;
+  position: relative;
 }
 
-.button {
-  background-color: #a36527;
-  border-color: #a36527;
-  color: white;
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 8.4vw;
+  top:  50%;
+  transform: translatey(-50%);
+  width: 19.8vw;
+  min-width: 465px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover  {
-  background-color: #C68544;
-  border-color: #C68544;
-  color: white;
+.header__text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
-@media (max-width: 800px){
-  
-  .header {
-    height: 100vh;
-    background-image: url("../images/header-bg.png");
-    background-size: cover;
-    position: relative;
-  }
-  
-  .header__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0px;
-    width: 100vw;
-    height: 8.4vw;
-    min-height: 329px;
-    background-color: #a5a837;
-    padding: 35px 52px;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  }
+.header__text--big {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .header__text {
-    font-size: 16px;
-    font-family: "Montserrat";
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.header__input--space {
+  margin-bottom: 10px;
+}
 
-  .header__text--big {
-    font-size: 20px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.fornecedores{
+  height: 650px;
+  background-image: url("../images/fornecedores-bg.png");
+  background-size: cover;
+  text-align: right;
+  position: relative;
+}
 
-  .header__input--space {
-    margin-bottom: 10px;
-  }
+.fornecedores__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  right: 8.4vw;
+  top:  50%;
+  transform: translatey(-50%);
+  width: 19.8vw;
+  min-width: 465px;
+  padding: 35px 52px;
+}
 
-  .header__form--center {
-    max-width: 360px;
-    text-align: center;
-  }
+.fornecedores__text {
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .fornecedores{
-    height: 650px;
-    background-image: url("../images/fornecedores-bg.png");
-    background-size: cover;
-    position: relative;
-  }
+.fornecedores__text--big {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .fornecedores__box{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: flex-end;
-    bottom: 0px;
-    width: 100vw;
-    height: 8.4vw;
-    min-height: 329px;
-    padding: 35px 52px;
-  }
+.fornecedores__button {
+  width: 150px;
+}
 
-  .fornecedores__text {
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-  }
-
-  .fornecedores__text--big {
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .fornecedores__button {
-    width: 150px;
-  }
-}  
-
-@media (min-width: 800px){
-  
-  .header {
-    height: 100vh;
-    background-image: url("../images/header-bg.png");
-    background-size: cover;
-    text-align: right;
-    position: relative;
-  }
-  
-  .header__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    right: 8.4vw;
-    top:  50%;
-    transform: translatey(-50%);
-    width: 19.8vw;
-    min-width: 465px;
-    background-color: #a5a837;
-    padding: 35px 52px;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .header__text {
-    font-size: 18px;
-    font-family: "Montserrat";
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .header__text--big {
-    font-family: "Montserrat";
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .header__input--space {
-    margin-bottom: 10px;
-  }
-
-  .fornecedores{
-    height: 650px;
-    background-image: url("../images/fornecedores-bg.png");
-    background-size: cover;
-    text-align: right;
-    position: relative;
-  }
-
-  .fornecedores__box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: absolute;
-    right: 8.4vw;
-    top:  50%;
-    transform: translatey(-50%);
-    width: 19.8vw;
-    min-width: 465px;
-    padding: 35px 52px;
-  }
-
-  .fornecedores__text {
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .fornecedores__text--big {
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
-
-  .fornecedores__button {
-    width: 150px;
-  }
-}  
+}
