@@ -260,6 +260,47 @@ body {
   width: 150px;
 }
 
+.section_howWorks_desk {
+  display: none;
+}
+
+.section_howWorks_mobile {
+  padding: 100px 5%;
+}
+
+.howWorks_title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.howWorks_text {
+  font-size: 18px;
+}
+
+.howWorks_card {
+  text-align: left;
+}
+.howWorks-swiper-pagination{
+  text-align: center;
+}
+
+.section_food_desk {
+  display: none;
+}
+
+.section_food_mobile {
+  padding: 50px 0;
+}
+
+.food_card {
+  width: 220px;
+  padding: 40px 0;
+}
+
+.foodName {
+  font-size: 18px;
+  text-align: left;
+}
 }
 
 @media (min-width: 800px){
@@ -318,10 +359,19 @@ body {
   width: 50%;
   text-align: end;
   margin: auto 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .text_partners {
   font-size: 18px;
+  width: 60%;
+  text-align: right;
+}
+
+.input_partners {
+  width: 70%;
 }
 
 .section__footer{
@@ -449,4 +499,71 @@ body {
   width: 150px;
 }
 
+.section_howWorks_desk {
+  padding: 30px 15%;
+}
+
+.section_howWorks_mobile{
+  display: none;
+}
+
+.div_howWorks_total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div_howWorks_left{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.div_howWorks_right{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.howWorks_title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.howWorks_text {
+  font-size: 18px;
+}
+
+.img_howWorks {
+  width: 430px;
+}
+
+.div_howWorks_text_left{
+  width: 65%;
+  padding: 50px 0;
+}
+
+.div_howWorks_text_right{
+  width: 65%;
+}
+
+.section_food_desk {
+  padding: 50px 0;
+}
+
+.food_card {
+  width: 220px;
+  padding: 40px 0;
+}
+
+.foodName {
+  font-size: 18px;
+  text-align: left;
+}
+
+.section_food_mobile {
+  display: none;
+}
 }
