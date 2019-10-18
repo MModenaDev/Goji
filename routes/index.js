@@ -77,7 +77,7 @@ router.post('/leads', (req, res, next) => {
           <br>
           <br>
           <h4>Thank you,</h4>
-          <h2>Grupo 6</h2>
+          <h2>Genki Foods</h2>
         </div>
       `
 
