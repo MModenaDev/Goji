@@ -499,6 +499,7 @@ body {
   width: 150px;
 }
 
+
 .section_howWorks_desk {
   padding: 30px 15%;
 }
@@ -565,5 +566,80 @@ body {
 
 .section_food_mobile {
   display: none;
+}
+
+.beneficiosDesktop {
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../images/Beneficios.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.postit {
+  height: 10vh;
+  min-height: 200px;
+  width: 10vh;
+  min-width: 300px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.postit__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.postit__text {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.color__white {
+  color:white;
+}
+
+.topleft{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
+}
+
+.topright{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 75%;
+}
+
+.bottomleft{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 25%;
+}
+
+.bottomright{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 75%;
+
 }
 }
