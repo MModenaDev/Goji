@@ -49,7 +49,7 @@ router.post("/signup", (req, res, next) => {
   newUser
         .save()
         .then(() => {
-          res.redirect("/");
+          res.redirect("/auth/login");
         })
         .catch(error => {
           next(error)

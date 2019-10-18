@@ -5,7 +5,22 @@ const router  = express.Router();
 const axios = require('axios')
 const Leads = require(`../models/leads`);
 const Store = require(`../models/stores`);
-const nodemailer = require('nodemail');
+const nodemailer = require('nodemailer');
+
+// =====================================================================================================================================
+// Authentication Middleware
+
+function check() {
+  return function (req, res, next) {
+      if (req.isAuthenticated()) {
+          return next();
+      } else {
+          res.redirect('/')
+      }
+  }
+}
+
+const checkLogedIn = check();
 
 // =====================================================================================================================================
 // Landing Page
@@ -82,13 +97,16 @@ router.post('/leads', (req, res, next) => {
 // =====================================================================================================================================
 // Profile
 
-router.get('/dashboard', (req, res, next) => {
+router.get('/dashboard/leads', checkLogedIn, (req, res, next) => {
   Leads.find()
     .then(leads => {
-      res.render('dashboard', {leads})
+      res.render('dashboardLeads', {leads})
     })
-    .catch(err => console.log(err)
-    )
+    .catch(err => console.log(err))
+})
+
+router.get('/dashboard/map', checkLogedIn, (req, res, next) => {
+  res.render('dashboardMap')
 })
 
 // =====================================================================================================================================
