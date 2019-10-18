@@ -45,6 +45,20 @@ body {
   width: 100px;
 }
 
+
+.button {
+  background-color: #a36527;
+  border-color: #a36527;
+  color: white;
+}
+
+.button:hover  {
+  background-color: #C68544;
+  border-color: #C68544;
+  color: white;
+}
+
+
 @media (max-width: 800px){
 .section__filo{
   padding: 50px 15%;
@@ -93,8 +107,7 @@ body {
 
 .img_partners{
   width: 100%;
-  height: 350px;
-  width: 464px;
+  margin-bottom: 20px;
 }
 
 .div_info_partners {
@@ -150,6 +163,144 @@ body {
   text-align: center;
 }
 
+.header {
+  height: 100vh;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  height: 8.4vw;
+  min-height: 329px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header__text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.header__text--big {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.header__input--space {
+  margin-bottom: 10px;
+}
+
+.header__form--center {
+  max-width: 360px;
+  text-align: center;
+}
+
+.fornecedores{
+  height: 650px;
+  background-image: url("../images/fornecedores-bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.fornecedores__box{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: flex-end;
+  bottom: 0px;
+  width: 100vw;
+  height: 8.4vw;
+  min-height: 329px;
+  padding: 35px 52px;
+}
+
+.fornecedores__text {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+
+.fornecedores__text--big {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.fornecedores__button {
+  width: 150px;
+}
+
+.section_howWorks_desk {
+  display: none;
+}
+
+.section_howWorks_mobile {
+  padding: 100px 5%;
+}
+
+.howWorks_title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.howWorks_text {
+  font-size: 18px;
+}
+
+.howWorks_card {
+  text-align: left;
+}
+.howWorks-swiper-pagination{
+  text-align: center;
+}
+
+.section_food_desk {
+  display: none;
+}
+
+.section_food_mobile {
+  padding: 50px 0;
+}
+
+.food_card {
+  width: 220px;
+  padding: 40px 0;
+}
+
+.foodName {
+  font-size: 18px;
+  text-align: left;
+}
 }
 
 @media (min-width: 800px){
@@ -208,10 +359,19 @@ body {
   width: 50%;
   text-align: end;
   margin: auto 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .text_partners {
   font-size: 18px;
+  width: 60%;
+  text-align: right;
+}
+
+.input_partners {
+  width: 70%;
 }
 
 .section__footer{
@@ -243,214 +403,243 @@ body {
   justify-content: space-between;
 }
 
+  
+.header {
+  height: 100vh;
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  text-align: right;
+  position: relative;
 }
 
-.button {
-  background-color: #a36527;
-  border-color: #a36527;
-  color: white;
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 8.4vw;
+  top:  50%;
+  transform: translatey(-50%);
+  width: 19.8vw;
+  min-width: 465px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.button:hover  {
-  background-color: #C68544;
-  border-color: #C68544;
-  color: white;
+.header__text {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 
-@media (max-width: 800px){
-  
-  .header {
-    height: 100vh;
-    background-image: url("../images/header-bg.png");
-    background-size: cover;
-    position: relative;
-  }
-  
-  .header__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 0px;
-    width: 100vw;
-    height: 8.4vw;
-    min-height: 329px;
-    background-color: #a5a837;
-    padding: 35px 52px;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  }
+.header__text--big {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .header__text {
-    font-size: 16px;
-    font-family: "Montserrat";
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.header__input--space {
+  margin-bottom: 10px;
+}
 
-  .header__text--big {
-    font-size: 20px;
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.fornecedores{
+  height: 650px;
+  background-image: url("../images/fornecedores-bg.png");
+  background-size: cover;
+  text-align: right;
+  position: relative;
+}
 
-  .header__input--space {
-    margin-bottom: 10px;
-  }
+.fornecedores__box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  right: 8.4vw;
+  top:  50%;
+  transform: translatey(-50%);
+  width: 19.8vw;
+  min-width: 465px;
+  padding: 35px 52px;
+}
 
-  .header__form--center {
-    max-width: 360px;
-    text-align: center;
-  }
+.fornecedores__text {
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .fornecedores{
-    height: 650px;
-    background-image: url("../images/fornecedores-bg.png");
-    background-size: cover;
-    position: relative;
-  }
+.fornecedores__text--big {
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
 
-  .fornecedores__box{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: flex-end;
-    justify-content: flex-end;
-    bottom: 0px;
-    width: 100vw;
-    height: 8.4vw;
-    min-height: 329px;
-    padding: 35px 52px;
-  }
+.fornecedores__button {
+  width: 150px;
+}
 
-  .fornecedores__text {
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-  }
 
-  .fornecedores__text--big {
-    font-size: 24px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.section_howWorks_desk {
+  padding: 30px 15%;
+}
 
-  .fornecedores__button {
-    width: 150px;
-  }
-}  
+.section_howWorks_mobile{
+  display: none;
+}
 
-@media (min-width: 800px){
-  
-  .header {
-    height: 100vh;
-    background-image: url("../images/header-bg.png");
-    background-size: cover;
-    text-align: right;
-    position: relative;
-  }
-  
-  .header__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    right: 8.4vw;
-    top:  50%;
-    transform: translatey(-50%);
-    width: 19.8vw;
-    min-width: 465px;
-    background-color: #a5a837;
-    padding: 35px 52px;
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
-  }
+.div_howWorks_total {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .header__text {
-    font-size: 18px;
-    font-family: "Montserrat";
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.div_howWorks_left{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
 
-  .header__text--big {
-    font-family: "Montserrat";
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.div_howWorks_right{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
-  .header__input--space {
-    margin-bottom: 10px;
-  }
+.howWorks_title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
 
-  .fornecedores{
-    height: 650px;
-    background-image: url("../images/fornecedores-bg.png");
-    background-size: cover;
-    text-align: right;
-    position: relative;
-  }
+.howWorks_text {
+  font-size: 18px;
+}
 
-  .fornecedores__box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: absolute;
-    right: 8.4vw;
-    top:  50%;
-    transform: translatey(-50%);
-    width: 19.8vw;
-    min-width: 465px;
-    padding: 35px 52px;
-  }
+.img_howWorks {
+  width: 430px;
+}
 
-  .fornecedores__text {
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.div_howWorks_text_left{
+  width: 65%;
+  padding: 50px 0;
+}
 
-  .fornecedores__text--big {
-    font-size: 28px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-  }
+.div_howWorks_text_right{
+  width: 65%;
+}
 
-  .fornecedores__button {
-    width: 150px;
-  }
-}  
+.section_food_desk {
+  padding: 50px 0;
+}
+
+.food_card {
+  width: 220px;
+  padding: 40px 0;
+}
+
+.foodName {
+  font-size: 18px;
+  text-align: left;
+}
+
+.section_food_mobile {
+  display: none;
+}
+
+.beneficiosDesktop {
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("../images/Beneficios.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.postit {
+  height: 10vh;
+  min-height: 200px;
+  width: 10vh;
+  min-width: 300px;
+  background-color: #a5a837;
+  padding: 35px 52px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.postit__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.postit__text {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.color__white {
+  color:white;
+}
+
+.topleft{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 25%;
+}
+
+.topright{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 75%;
+}
+
+.bottomleft{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 25%;
+}
+
+.bottomright{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 75%;
+
+}
+}
