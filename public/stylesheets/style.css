@@ -1,8 +1,74 @@
-.benefits {
-  background-color: rgb(208, 144, 59);
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
 
 #map {
   margin: 0 auto;
   width: 75%;
   height: 750px;
+}
+
+.pd-head{
+  padding: 3rem 7rem;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.header-box {
+  background-color: rgb(164, 168, 55);
+  text-align: end;
+  color: white;
+  padding: 3rem;
+  margin: auto 0;
+}
+
+.pd-filo {
+  padding: 3rem 12rem;
+}
+
+.pd-bene {
+  background-color: blue;
+  padding: 3rem 12rem;
+  height: 100vh;
+  position: relative;
+}
+
+.img-info-width{
+  width: 8rem;
+}
+
+.filo-info-width {
+  width: 10rem;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.img-bene {
+  height: 40rem;
+  width: 40rem;
+  background-color: yellow;
+  border: 1px solid yellow;
+  border-radius: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.div-teste {
+  background-color: rgb(164, 168, 55);
+  width: 10rem;
+  height: ;;: 10rem;
 }
